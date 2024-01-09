@@ -22,7 +22,7 @@ The project aims to develop an Arabic Automated Short Answers Grading System and
 
 [Exploratory data analysis (EDA)](#exploratory-data-analysis)
 * [Loading Data](#loading-data)
-* [Characteristics Of Dataset](#characteristics-of-dataset)
+* [Characteristics](#characteristics)
 * [Data Cleaning](#data-cleaning)
 
 [Data Pre-Preprocessing](#data-pre-preprocessing)
@@ -80,7 +80,7 @@ I will now outline the process we followed for Question 1, which was repeated fo
 
 ![Untitled](images/loaddata.jpg)
 
-### Characteristics Of Dataset
+### Characteristics
 
 ![Untitled](images/eda.jpg)
 
@@ -404,7 +404,6 @@ const uri = 'http://localhost:8000'; // <-- the URL of our GraphQL server
 To build and run our frontend application we created a `Dockerfile` containing the following code :
 
 ```
-# Build stage
 FROM node:18.13.0-alpine as build
 RUN mkdir -p /app
 
@@ -416,7 +415,6 @@ RUN npm install
 COPY . /app/
 RUN npm run build --prod
 
-# Prod stage
 FROM nginx:alpine
 COPY --from=build /app/dist/answers-grading-system-frontend /usr/share/nginx/html
 ```
