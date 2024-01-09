@@ -1,0 +1,64 @@
+.main_container {
+    background: rgba(0, 0, 0, 0.66);
+    
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shadow {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('/assets/bg.png'), lightgray 50% / cover no-repeat;
+    background-position-x: center;
+}
+
+.ayah_container {
+    margin: 100px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#m_ayah {
+    height: 80px;
+}
+
+.ayah_container h2 {
+    color: #FFF;
+    font-family: Traditional Arabic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    margin-top: 30px;
+
+}
+
+.subtitle img {
+    height: 60px;
+}
+
+#start {
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background: #FFF;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}

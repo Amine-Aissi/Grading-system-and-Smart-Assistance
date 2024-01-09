@@ -1,0 +1,22 @@
+<div class="test_container">
+    <div class="shadow"></div>
+    <div class="logo_container">
+        <img src="/assets/logo.png" alt="">
+    </div>
+
+    <div class="questions">
+        <div *ngFor="let q of questions" class="q_container">
+            <div class="q_header">
+                <span style="font-weight: bolder;" >السؤال {{q.questionId}} : </span>{{q.question}}
+            </div>
+            <textarea name="res{{0}}" id="" cols="100" rows="1" (input)="onValueChange(q.questionId, $event)"></textarea>
+        </div>
+
+
+        <a id="subanswer" (click)="sendAnswers()" href="#">عرض النتيجة</a>
+    </div>
+
+
+
+    
+</div>

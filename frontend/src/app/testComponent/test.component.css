@@ -1,0 +1,62 @@
+.test_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsla(0, 0%, 14%, 0.95);
+    min-height: 100vh;
+}
+
+.shadow {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('/assets/bgt.png'), lightgray 50% / cover no-repeat;
+    background-position-x: center;
+}
+
+.logo_container img{
+    height: 80px;
+}
+
+.logo_container {
+    margin: 20px 0 40px;
+}
+
+.test_container textarea{
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 1.3em;
+    color: white;
+    padding: 5px;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.q_container {
+    padding: 12px;
+    border-radius: 12px;
+    background: #232323;
+    box-shadow: 9px 8px 8.7px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    margin-bottom: 30px;
+}
+
+#subanswer {
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background: #FFF;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
