@@ -450,7 +450,7 @@ By clicking on the button ****ابدأ الاختبار**** the test will begin 
 By clicking on the button ****عرض النتيجة**** the grades given by the models we trained will showed with the correct answers :
 
 ![Untitled](images/untitled16.png)
-![Untitled](images/untitled17.png)
+![Untitled](images/untitled19.png)
 
 ## Contributors
 
