@@ -454,9 +454,7 @@ By clicking on the button ****عرض النتيجة**** the grades given by the 
 ![Untitled](images/untitled%2016.png)
 
 ## Contributors
-
-<a href="https://github.com/ahmed-bentajhamyani/answers-grading-system-application/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ahmed-bentajhamyani/answers-grading-system-application" />
-</a>
+Aissi Amine
+Belainoussi Haitam
 
 
