@@ -376,7 +376,7 @@ docker-compose up
 
  
 
-![Untitled](images/untitled%2011.png)
+![Untitled](images/untitled18.jpg)
 
 ## Frontend of our application
 
@@ -416,46 +416,47 @@ COPY . /app/
 RUN npm run build --prod
 
 FROM nginx:alpine
-COPY --from=build /app/dist/answers-grading-system-frontend /usr/share/nginx/html
+COPY --from=build /app/dist/frontend /usr/share/nginx/html
 ```
 
 To build the application in **************Docker************** we use the following command :
 
 ```
-docker build --tag answers-grading-system-frontend .
+docker build --tag frontend .
 ```
-
-![Untitled](images/untitled%2012.png)
 
 To run it we used :
 
 ```
-docker run -d -p 4200:80 --name answers-grading-system-frontend answers-grading-system-frontend
+docker run -d -p 4200:80 --name frontend frontend
 ```
-
-![Untitled](images/untitled%2013.png)
 
 ## Testing the Application
 
 ### Home Page
 
-![Untitled](images/untitled%2014.png)
+![Untitled](images/untitled11.png)
 
 ### Question Page
 
 By clicking on the button ****ابدأ الاختبار**** the test will begin :
-
-![Untitled](images/untitled%2015.png)
+![Untitled](images/untitled12.png)
+![Untitled](images/untitled13.png)
+![Untitled](images/untitled14.png)
+![Untitled](images/untitled15.png)
 
 ### Result Page
 
 By clicking on the button ****عرض النتيجة**** the grades given by the models we trained will showed with the correct answers :
 
-![Untitled](images/untitled%2016.png)
+![Untitled](images/untitled16.png)
+![Untitled](images/untitled17.png)
 
 ## Contributors
+
 Aissi Amine
 
 Belainoussi Haitam
 
+Rania Oussaleh Taoufik
 
